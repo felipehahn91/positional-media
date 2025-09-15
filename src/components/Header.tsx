@@ -36,7 +36,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-foreground">
+            <a href="/" className="text-2xl font-heading tracking-wider uppercase text-foreground">
               Positional Media
             </a>
           </div>

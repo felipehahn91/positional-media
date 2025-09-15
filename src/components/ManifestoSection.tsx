@@ -9,7 +9,7 @@ const ManifestoSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Text Content - Left Side */}
           <div className="space-y-8">
-            <h2 className="text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="text-5xl font-bold text-foreground tracking-tight font-heading uppercase">
               Nosso Manifesto.
             </h2>
             <div className="space-y-6 text-manifesto text-muted-foreground">

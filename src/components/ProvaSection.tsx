@@ -5,7 +5,7 @@ const ProvaSection = () => {
   return (
     <section id="prova" className="py-32 px-4 bg-secondary/30">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl font-bold text-foreground tracking-tight mb-6">
+        <h2 className="text-5xl font-bold text-foreground tracking-tight mb-6 font-heading uppercase">
           A Prova.
         </h2>
         

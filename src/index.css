@@ -8,55 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Positional Media brand colors */
-    --background: 0 0% 98%;
-    --foreground: 213 45% 15%;
+    /* New brand colors based on identity guide */
+    --background: 40 83% 98%; /* #fffcf7 */
+    --foreground: 213 69% 20%; /* #122e54 */
 
     --card: 0 0% 100%;
-    --card-foreground: 213 45% 15%;
+    --card-foreground: 213 69% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213 45% 15%;
+    --popover-foreground: 213 69% 20%;
 
-    /* Primary - Positional Media Navy Blue */
-    --primary: 213 45% 25%;
+    /* Primary - Dark Blue */
+    --primary: 213 69% 20%; /* #122e54 */
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary - Light navy variation */
-    --secondary: 213 20% 96%;
-    --secondary-foreground: 213 45% 15%;
+    /* Secondary - Light blue variation */
+    --secondary: 213 70% 96%;
+    --secondary-foreground: 213 69% 20%;
 
     /* Muted tones for sophisticated contrast */
-    --muted: 213 15% 94%;
+    --muted: 213 30% 94%;
     --muted-foreground: 213 20% 45%;
 
-    /* Accent - Positional Media Turquoise */
-    --accent: 174 75% 55%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Turquoise */
+    --accent: 174 80% 46%; /* #15d9c1 */
+    --accent-foreground: 213 69% 20%;
 
-    /* Cinematic dark theme - Positional Media Navy */
-    --cinematic: 213 45% 12%;
-    --cinematic-foreground: 0 0% 98%;
+    /* Cinematic dark theme - Dark Blue */
+    --cinematic: 213 69% 15%;
+    --cinematic-foreground: 40 83% 98%;
 
     /* Hero gradient overlay with brand colors */
-    --hero-overlay: linear-gradient(135deg, hsl(213 45% 12% / 0.8), hsl(213 45% 25% / 0.6));
+    --hero-overlay: linear-gradient(135deg, hsl(213 69% 15% / 0.8), hsl(213 69% 20% / 0.6));
     
     /* Brand-specific gradients */
-    --gradient-brand: linear-gradient(135deg, hsl(213 45% 25%), hsl(174 75% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(213 45% 12% / 0.9), hsl(213 45% 25% / 0.7));
+    --gradient-brand: linear-gradient(135deg, hsl(213 69% 20%), hsl(174 80% 46%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 69% 15% / 0.9), hsl(213 69% 20% / 0.7));
     
     /* Elegant shadows with brand colors */
-    --shadow-elegant: 0 20px 60px -20px hsl(213 45% 25% / 0.15);
-    --shadow-premium: 0 10px 40px -10px hsl(213 45% 25% / 0.25);
-    --shadow-cinematic: 0 0 100px hsl(213 45% 12% / 0.4);
-    --shadow-accent: 0 10px 30px -10px hsl(174 75% 55% / 0.3);
+    --shadow-elegant: 0 20px 60px -20px hsl(213 69% 20% / 0.15);
+    --shadow-premium: 0 10px 40px -10px hsl(213 69% 20% / 0.25);
+    --shadow-cinematic: 0 0 100px hsl(213 69% 15% / 0.4);
+    --shadow-accent: 0 10px 30px -10px hsl(174 80% 46% / 0.3);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 213 20% 90%;
     --input: 213 15% 95%;
-    --ring: 174 75% 55%;
+    --ring: 174 80% 46%;
 
     --radius: 0.75rem;
 
@@ -78,36 +78,36 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 213 45% 8%;
-    --foreground: 0 0% 98%;
+    --background: 213 69% 10%;
+    --foreground: 40 83% 98%;
 
-    --card: 213 45% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 213 69% 15%;
+    --card-foreground: 40 83% 98%;
 
-    --popover: 213 45% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 213 69% 15%;
+    --popover-foreground: 40 83% 98%;
 
-    --primary: 174 75% 55%;
-    --primary-foreground: 213 45% 15%;
+    --primary: 174 80% 46%;
+    --primary-foreground: 213 69% 10%;
 
-    --secondary: 213 35% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 213 50% 20%;
+    --secondary-foreground: 40 83% 98%;
 
-    --muted: 213 35% 15%;
+    --muted: 213 50% 20%;
     --muted-foreground: 213 20% 65%;
 
-    --accent: 174 75% 55%;
-    --accent-foreground: 213 45% 15%;
+    --accent: 174 80% 46%;
+    --accent-foreground: 213 69% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 213 35% 20%;
-    --input: 213 35% 20%;
-    --ring: 174 75% 55%;
+    --border: 213 50% 25%;
+    --input: 213 50% 25%;
+    --ring: 174 80% 46%;
     
-    --cinematic: 213 45% 4%;
-    --cinematic-foreground: 0 0% 98%;
+    --cinematic: 213 69% 5%;
+    --cinematic-foreground: 40 83% 98%;
   }
 }
 
@@ -123,19 +123,15 @@ All colors MUST be HSL.
 
   /* Cinematic typography system */
   .text-cinematic-hero {
-    @apply text-6xl md:text-8xl font-bold tracking-tight leading-none;
-    font-family: 'Inter', system-ui, sans-serif;
-    font-weight: 800;
+    @apply text-6xl md:text-8xl font-bold tracking-tight leading-none font-heading uppercase;
   }
 
   .text-cinematic-sub {
-    @apply text-xl md:text-2xl font-light tracking-wide;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply text-xl md:text-2xl font-light tracking-wide font-sans;
   }
 
   .text-manifesto {
-    @apply text-lg md:text-xl leading-relaxed font-light;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply text-lg md:text-xl leading-relaxed font-light font-sans;
     line-height: 1.8;
   }
 
