@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Clock, Linkedin, Instagram, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Facebook, Instagram, Youtube } from "lucide-react";
 import logo from "@/assets/logo.webp";
 
 const Footer = () => {
@@ -49,13 +49,15 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-foreground mb-6">Siga-nos</h4>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.facebook.com/profile.php?id=61579340281945"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-secondary hover:bg-accent hover:text-accent-foreground p-3 rounded-lg transition-colors duration-300"
-                aria-label="LinkedIn"
+                aria-label="Facebook"
               >
-                <Linkedin className="w-5 h-5" />
+                <Facebook className="w-5 h-5" />
               </a>
-              <a 
+a 
                 href="https://www.instagram.com/positionalmedia"
                 target="_blank"
                 rel="noopener noreferrer"
