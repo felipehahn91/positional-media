@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.dockerignore
+Dockerfile
+nginx.conf
+
+# Dependências
+node_modules
+
+# Saída de build
+dist
+dist-ssr
+
+# Logs
+logs
+*.log
+
+# Variáveis de ambiente
+.env
+.env.*
+*.local
+
+# Arquivos específicos do editor
+.idea
+.vscode
