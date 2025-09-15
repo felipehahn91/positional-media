@@ -53,7 +53,11 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isScrolled 
+                    ? "text-muted-foreground hover:text-primary" 
+                    : "text-white/90 hover:text-white"
+                }`}
               >
                 {link.label}
               </a>
@@ -67,7 +71,11 @@ const Header = () => {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className={!isScrolled ? 'text-white hover:bg-white/10 hover:text-white' : ''}
+                >
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
