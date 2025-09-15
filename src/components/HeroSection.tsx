@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 hero-overlay" />
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto pt-24">
         <h1 className="text-cinematic-hero text-white mb-8 fade-in-up">
           AUTORIDADE NÃO SE CRIA
           <br />
