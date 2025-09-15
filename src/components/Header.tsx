@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import logoDefault from "@/assets/logo-header.webp";
 import logoScrolled from "@/assets/logo.webp";
 
@@ -76,18 +76,13 @@ const Header = () => {
                   size="icon"
                   className={!isScrolled ? 'text-white hover:bg-white/10 hover:text-white' : ''}
                 >
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-8 w-8" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full max-w-xs bg-background p-0">
                 <div className="flex flex-col h-full">
                   <div className="flex justify-between items-center p-4 border-b">
                      <h4 className="text-lg font-semibold">Menu</h4>
-                     <SheetClose asChild>
-                        <Button variant="ghost" size="icon">
-                            <X className="h-6 w-6" />
-                        </Button>
-                     </SheetClose>
                   </div>
                   <nav className="flex flex-col space-y-2 p-4">
                     {navLinks.map((link) => (
