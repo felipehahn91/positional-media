@@ -1,4 +1,4 @@
-import feProfile from "@/assets/fe-profile.jpg";
+import feProfile from "@/assets/fe-albuquerque-profile.webp";
 import fabioProfile from "@/assets/fabio-profile.jpg";
 
 const FusaoSection = () => {
