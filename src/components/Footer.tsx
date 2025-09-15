@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Logo Column */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Positional Media" className="h-24 w-auto mb-4" />
+            <img src={logo} alt="Positional Media" className="h-12 w-auto mb-4" />
             <p className="text-muted-foreground">
               Arquitetando a autoridade de experts incontestáveis
             </p>
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <span className="text-muted-foreground">comercial.positionalmedia@gmail.com</span>
+                <span className="text-muted-foreground break-all">comercial.positionalmedia@gmail.com</span>
               </div>
             </div>
           </div>
