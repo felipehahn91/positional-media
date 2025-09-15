@@ -76,7 +76,7 @@ const Header = () => {
                   size="icon"
                   className={!isScrolled ? 'text-white hover:bg-white/10 hover:text-white' : ''}
                 >
-                  <Menu className="h-8 w-8" />
+                  <Menu className="h-10 w-10" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full max-w-xs bg-background p-0">
