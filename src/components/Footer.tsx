@@ -56,7 +56,9 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/positionalmedia"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-secondary hover:bg-accent hover:text-accent-foreground p-3 rounded-lg transition-colors duration-300"
                 aria-label="Instagram"
               >
