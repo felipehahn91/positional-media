@@ -3,7 +3,7 @@ import fabioProfile from "@/assets/fabio-profile.jpg";
 
 const FusaoSection = () => {
   return (
-    <section className="py-32 px-4 bg-secondary/30">
+    <section id="fusao" className="py-32 px-4 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold text-foreground tracking-tight mb-6">

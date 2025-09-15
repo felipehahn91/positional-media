@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const CTASection = () => {
   return (
-    <section className="py-32 px-4 bg-cinematic text-cinematic-foreground">
+    <section id="cta" className="py-32 px-4 bg-cinematic text-cinematic-foreground">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-5xl font-bold tracking-tight mb-8">
           Pronto para se tornar a referência?

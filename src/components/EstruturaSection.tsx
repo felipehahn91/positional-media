@@ -39,7 +39,7 @@ const EstruturaSection = () => {
   ];
 
   return (
-    <section className="py-32 px-4 bg-cinematic text-cinematic-foreground">
+    <section id="estrutura" className="py-32 px-4 bg-cinematic text-cinematic-foreground">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold tracking-tight mb-6">
