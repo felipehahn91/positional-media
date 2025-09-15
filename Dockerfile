@@ -7,7 +7,7 @@ COPY package.json bun.lockb ./
 
 # Instalar o Bun e as dependências
 RUN npm install -g bun
-RUN bun install --frozen-lockfile
+RUN bun install
 
 # Copiar o restante do código-fonte da aplicação
 COPY . .
