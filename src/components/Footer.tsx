@@ -57,7 +57,7 @@ const Footer = () => {
               >
                 <Facebook className="w-5 h-5" />
               </a>
-a 
+              <a 
                 href="https://www.instagram.com/positionalmedia"
                 target="_blank"
                 rel="noopener noreferrer"
