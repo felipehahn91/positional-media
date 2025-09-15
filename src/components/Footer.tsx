@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Logo Column */}
           <div className="lg:col-span-1">
-            <img src={logo} alt="Positional Media" className="h-12 w-auto mb-4" />
+            <img src={logo} alt="Positional Media" className="h-48 w-auto mb-4" />
             <p className="text-muted-foreground">
               Arquitetando a autoridade de experts incontestáveis
             </p>
