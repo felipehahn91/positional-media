@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { href: "#manifesto", label: "O Manifesto" },
@@ -36,8 +37,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-heading tracking-wider uppercase text-foreground">
-              Positional Media
+            <a href="/">
+              <img src={logo} alt="Positional Media" className="h-12 w-auto" />
             </a>
           </div>
 

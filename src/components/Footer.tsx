@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Clock, Linkedin, Instagram, Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,9 +8,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Logo Column */}
           <div className="lg:col-span-1">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
-              Positional Media
-            </h3>
+            <img src={logo} alt="Positional Media" className="h-12 w-auto mb-4" />
             <p className="text-muted-foreground">
               Arquitetando a autoridade de experts incontestáveis
             </p>
