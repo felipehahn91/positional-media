@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo-header.webp";
+import logoDefault from "@/assets/logo-header.webp";
+import logoScrolled from "@/assets/logo.webp";
 
 const navLinks = [
   { href: "#manifesto", label: "O Manifesto" },
@@ -17,7 +18,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -34,11 +35,15 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-28">
+        <div className={`flex items-center justify-between transition-all duration-300 ${isScrolled ? 'h-20' : 'h-28'}`}>
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/">
-              <img src={logo} alt="Positional Media" className="h-24 w-auto" />
+              <img 
+                src={isScrolled ? logoScrolled : logoDefault} 
+                alt="Positional Media" 
+                className={`w-auto transition-all duration-300 ${isScrolled ? 'h-16' : 'h-24'}`} 
+              />
             </a>
           </div>
 
