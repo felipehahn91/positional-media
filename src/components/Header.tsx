@@ -48,23 +48,25 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-medium transition-all duration-300 px-3 py-2 rounded-md ${
                   isScrolled 
-                    ? "text-muted-foreground hover:text-primary" 
-                    : "text-white/90 hover:text-white"
+                    ? "text-muted-foreground hover:text-primary hover:bg-primary/10" 
+                    : "text-white/90 hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.label}
               </a>
             ))}
-            <Button variant="premium" onClick={scrollToCTA}>
-              Agende uma conversa
-            </Button>
+            <div className="ml-6">
+              <Button variant="premium" onClick={scrollToCTA}>
+                Agende uma conversa
+              </Button>
+            </div>
           </nav>
 
           {/* Mobile Menu Button */}

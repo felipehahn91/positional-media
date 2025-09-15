@@ -3,6 +3,8 @@ import videoProduction from "@/assets/video-production.jpg";
 import brandIdentity from "@/assets/brand-identity.jpg";
 import webDevelopment from "@/assets/web-development.jpg";
 import consultoria from "@/assets/consultoria.jpg";
+import AnimatedDiv from "./AnimatedDiv";
+import { motion } from "framer-motion";
 
 const EstruturaSection = () => {
   const capabilities = [
@@ -39,9 +41,9 @@ const EstruturaSection = () => {
   ];
 
   return (
-    <section id="estrutura" className="py-32 px-4 bg-cinematic text-cinematic-foreground">
+    <section id="estrutura" className="py-32 px-4 bg-cinematic text-cinematic-foreground overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+        <AnimatedDiv className="text-center mb-20">
           <h2 className="text-5xl font-bold mb-6 font-heading tracking-wide">
             A Estrutura por Trás do Expert
           </h2>
@@ -49,38 +51,43 @@ const EstruturaSection = () => {
             Para construir experts de referência, reunimos um arsenal de competências e 
             tecnologia de ponta em um só lugar.
           </p>
-        </div>
+        </AnimatedDiv>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {capabilities.map((capability, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-500 shadow-premium hover:shadow-cinematic">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={capability.image} 
-                    alt={capability.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+            <AnimatedDiv key={index} delay={index * 0.1}>
+              <motion.div 
+                className="group cursor-pointer h-full"
+                whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              >
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg overflow-hidden hover:bg-white/10 transition-all duration-500 shadow-premium hover:shadow-cinematic h-full flex flex-col">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src={capability.image} 
+                      alt={capability.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+                  </div>
+                  <div className="p-6 flex-grow flex flex-col">
+                    <h3 className="text-xl font-bold mb-4 text-accent">
+                      {capability.title}
+                    </h3>
+                    <p className="text-white/80 leading-relaxed">
+                      {capability.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-4 text-accent">
-                    {capability.title}
-                  </h3>
-                  <p className="text-white/80 leading-relaxed">
-                    {capability.description}
-                  </p>
-                </div>
-              </div>
-            </div>
+              </motion.div>
+            </AnimatedDiv>
           ))}
         </div>
 
-        <div className="text-center">
+        <AnimatedDiv delay={capabilities.length * 0.1} className="text-center">
           <p className="text-lg text-white/70 italic">
             Todos estes elementos são integrados em nosso projeto principal, o Posicionamento 360°.
           </p>
-        </div>
+        </AnimatedDiv>
       </div>
     </section>
   );
