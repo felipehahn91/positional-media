@@ -42,7 +42,7 @@ const EstruturaSection = () => {
     <section id="estrutura" className="py-32 px-4 bg-cinematic text-cinematic-foreground">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold mb-6 font-heading">
+          <h2 className="text-5xl font-bold mb-6 font-heading tracking-wide">
             A Estrutura por Trás do Expert
           </h2>
           <p className="text-xl text-white/80 max-w-4xl mx-auto">

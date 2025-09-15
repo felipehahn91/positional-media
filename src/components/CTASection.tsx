@@ -6,7 +6,7 @@ const CTASection = () => {
   return (
     <section id="cta" className="py-32 px-4 bg-cinematic text-cinematic-foreground">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl font-bold mb-8 font-heading">
+        <h2 className="text-5xl font-bold mb-8 font-heading tracking-wide">
           Pronto para se tornar a referência?
         </h2>
         
