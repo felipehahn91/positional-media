@@ -6,7 +6,7 @@ const FusaoSection = () => {
     <section id="fusao" className="py-32 px-4 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-foreground tracking-tight mb-6 font-heading uppercase">
+          <h2 className="text-5xl font-bold text-foreground mb-6 font-heading uppercase">
             A Fusão
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
