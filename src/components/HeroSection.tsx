@@ -18,9 +18,9 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto pt-24">
         <h1 className="text-cinematic-hero text-white mb-8 fade-in-up">
-          AUTORIDADE NÃO SE CRIA
+          Autoridade não se cria
           <br />
-          COM POSTS.
+          com posts.
         </h1>
         <p className="text-cinematic-sub text-white/90 mb-12 fade-in-delayed">
           Nós arquitetamos a sua posição de expert incontestável.
