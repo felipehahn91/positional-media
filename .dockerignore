@@ -2,11 +2,6 @@
 .git
 .gitignore
 
-# Docker
-.dockerignore
-Dockerfile
-nginx.conf
-
 # Dependências
 node_modules
 
